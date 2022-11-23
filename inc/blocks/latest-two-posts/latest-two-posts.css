@@ -1,0 +1,184 @@
+ #content .sty_in_contact__blog .latest-two-posts{
+    height: 100%;
+ }
+ .latest-two-posts{
+ }
+ .ltp_handler__inner {
+    height: 100%;
+}
+
+ #latest-two-posts{
+    margin: 0 auto;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+    position: relative;    
+ }
+ #latest-two-posts .blog_link{
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    font-weight: 500;
+    padding: 0;
+ }
+ #latest-two-posts .blog_link a:link, #latest-two-posts .blog_link a:visited, #latest-two-posts .blog_link a:active{
+    color: #026acd;
+    text-decoration: underline;
+ }
+ #latest-two-posts .blog_link a:hover{
+     text-decoration: none;;
+ }
+
+ #content .sty_in_contact__blog .latest-two-posts #latest-two-posts{
+     height: 100%;
+ }
+ #latest-two-posts > .ltp_handler {
+    width: calc(50% - (.66666666666667*1.5rem));
+    background: #f2f3f4;
+    border-radius: 13px;
+    align-self: stretch;
+    overflow: hidden;
+    position: relative;
+}
+
+.ltp_handler__img {
+    padding: 0;
+    margin: 0 0 1.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 13px 13px 0 0;
+}
+.ltp_handler__img img{
+    display: block;
+    border-radius: 13px 13px 0 0;
+    width: 100%;
+    opacity: 0;
+    height:140px
+}
+
+.ltp_handler__content_outer{
+    padding: 0 1.5rem 4rem 1.5rem;
+}
+
+.ltp_handler__content{}
+.ltp_handler__content h3.ltp_handler__title{
+    font-size: 1.125rem;
+    line-height: 120%;
+    font-weight: 600;
+    padding: 0;
+    text-transform: unset;
+}
+.ltp_handler__content h3.ltp_handler__title > a:link, .ltp_handler__content h3.ltp_handler__title > a:visited, .ltp_handler__content h3.ltp_handler__title > a:active{
+    text-decoration: none;
+    color: #000;
+}
+.ltp_handler__content h3.ltp_handler__title > a:hover{
+    color: #022ea2
+}
+
+.ltp_handler__content p.ltp_handler__autho{
+    font-size: 0.813rem;
+    padding: 0.3rem 0 1rem 0;
+}
+.ltp_handler__content p.ltp_handler__autho span{
+    color: #026acd;
+    font-weight: 600;
+}
+
+.ltp_handler__content p.ltp_handler__excerpt{
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 120%;
+    padding: 0;
+}
+
+.ltp_handler__btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1.5rem 1rem;
+}
+
+.ltp_handler__btn_helper{
+    margin: 0 auto;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.ltp_handler__btn_helper p.ltp_handler__btn_para{
+    padding: 0;
+    font-size: 0.813rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    align-self: stretch
+}
+
+.ltp_handler__btn_helper p.ltp_handler__btn_para a:link, .ltp_handler__btn_helper p.ltp_handler__btn_para a:visited, .ltp_handler__btn_helper p.ltp_handler__btn_para a:active{
+    background:#026acd;
+    text-decoration: none;
+    color:#fff;
+    padding: 0.54rem 1.4rem;
+    border-radius: 19px;
+    display: inline-block;
+}
+.ltp_handler__btn_helper p.ltp_handler__btn_para a:hover{
+    opacity: 0.8;
+}
+
+.ltp_handler__btn_helper .ltp_handler__date{
+    align-self: stretch
+}
+
+.ltp_handler__btn_helper .ltp_handler__date .ltp_handler__datetb{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.ltp_handler__btn_helper .ltp_handler__date .ltp_handler__datetbc{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+    font-size: 0.73rem;
+    font-weight: 500;
+    padding: 0 0 0 1.2rem;
+    opacity: 0.7;
+}
+.ltp_handler__datetbc.mob{display: none !important}
+.ltp_handler__datetbc::before{
+    content: "\f133";
+    font-family: fontawesome;
+    position: absolute;
+    left: 0;
+}
+
+/***          /
+/**PREVIEW **/
+/***/
+
+.acf-block-preview .latest-two-posts{}
+.acf-block-preview #latest-two-posts{
+    margin: 0 auto;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+.acf-block-preview #latest-two-posts .ltp_handler{
+    width: 49%;
+}

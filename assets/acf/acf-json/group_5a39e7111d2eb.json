@@ -1,0 +1,48 @@
+{
+    "key": "group_5a39e7111d2eb",
+    "title": "Image Footer - Home Footer Only Widget",
+    "fields": [
+        {
+            "key": "field_5a39e743bae6b",
+            "label": "Image",
+            "name": "image",
+            "type": "image",
+            "instructions": "Image size: 410px by 302px",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "Footer-Home-Only-Image",
+            "library": "all",
+            "min_width": 410,
+            "min_height": 302,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "imagefooterhomefooteronly_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513744346
+}

@@ -1,0 +1,57 @@
+/*********/
+//Yoast Faq
+/*********/
+.page-template-template-singleprovider #content .wp-block-yoast-faq-block{
+  border: 1px solid #0a379e;
+  
+  .schema-faq-section:nth-child(1){
+    border-top: 0 none;
+  }
+  .schema-faq-section{
+    border-top: 1px solid #0a379e;
+  
+    .schema-faq-question{
+      color: #0a379e;
+    }
+  
+    .schema-faq-question::after{
+      background-position: -317% 325%;
+    }
+  
+    .schema-faq-question.aktibo::after{
+      background-position: -302% 325%;
+    }
+  
+    .schema-faq-answer{
+      color: #333;
+    }
+  }
+}
+
+
+#content .wp-block-yoast-faq-block.for__white{
+  border: 1px solid #0a379e;
+  
+  .schema-faq-section:nth-child(1){
+    border-top: 0 none;
+  }
+  .schema-faq-section{
+    border-top: 1px solid #0a379e;
+  
+    .schema-faq-question{
+      color: #0a379e;
+    }
+  
+    .schema-faq-question::after{
+      background-position: -317% 325%;
+    }
+  
+    .schema-faq-question.aktibo::after{
+      background-position: -302% 325%;
+    }
+  
+    .schema-faq-answer{
+      color: #333;
+    }
+  }
+}

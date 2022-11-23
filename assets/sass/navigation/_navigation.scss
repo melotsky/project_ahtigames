@@ -1,0 +1,170 @@
+/* nav css */
+/*First =============================================================================================*/
+nav {
+	float: left;
+	clear: left;
+	margin: 0px; /* adjust as necessary */
+}
+nav ul.sf-menu {
+	padding: 0;
+	margin: 0; /* reset list style */
+}
+/*Second ============================================================================================= */
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.sf-menu {
+	line-height: 1.0;
+}
+.sf-menu ul {
+	position: absolute;
+	top: -999em;
+	width: 10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width: 100%;
+}
+.sf-menu li:hover {
+	visibility: inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float: left;
+	position: relative;
+}
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+.sf-menu li:hover ul, .sf-menu li.sfHover ul {
+	left: 0;
+	top: 2.5em; /* match sf-menu line height */
+	z-index: 99;
+}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul {
+	top: -999em;
+}
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul {
+	left: 10em; /* match ul width */
+	top: 0;
+}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul {
+	top: -999em;
+}
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
+	left: 10em; /* match ul width */
+	top: 0;
+}
+/*Third ============================================================================================= */
+/*** DEMO SKIN ***/
+.sf-menu {
+	float: left;
+	margin-bottom: 1em;
+}
+.sf-menu a {
+	padding: .75em 1em;
+	text-decoration: none;
+}
+.sf-menu a, .sf-menu a:visited { /* visited pseudo selector so IE6 applies text colour*/
+	color: #13a;
+}
+.sf-menu li {
+}
+.sf-menu li li {
+}
+.sf-menu li li li {
+}
+.sf-menu li:hover, .sf-menu li.sfHover, .sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline: 0;
+}
+
+
+#nav-holder-right{
+	padding: 1.5rem 0 0 0;
+	margin: 0 0 0 6%;
+	@include tranny;
+}
+
+#navHolder{
+	padding: 0;
+}
+
+#navigation{
+	padding: 0
+}
+
+#id_header-nav{
+	padding: 0;
+}
+
+#thenavigator{
+	padding: 0;
+
+	> li{
+		font-family: "Proxima Nova Semibold", sans-serif;
+		font-size: 1.125rem;
+		text-transform: uppercase;
+		margin: 0 0.25rem;
+
+		> a:link, > a:visited, > a:active{
+			color:#fff;
+			background: rgba(255, 255, 255, 0);
+			padding: 0.563rem 1.063rem;
+			border-radius: 6px;
+		}
+		> a:hover{
+			text-decoration: none;
+			background: rgba(255, 255, 255, 0.15);
+		}
+
+		> ul.sub-menu{
+			display: none;
+			padding: 0;
+			background:rgba(0,0,0,.8);
+			border-radius: 6px;
+			top: 110%;
+			width: 13rem;
+			> li:nth-child(1){
+				border-top: 0 none;
+			}
+			> li {
+				border-top: 1px solid rgba(196, 194, 194, 0.2);
+				padding: 0;
+				font-size: 0.85rem;
+
+				> a:link, > a:visited, > a:active{
+					color:#fff;
+					padding: 0.563rem 1.063rem;
+				}
+				> a:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+#thenavigator > li.current-menu-item  > a:link, #thenavigator > li.current-menu-item  > a:visited, #thenavigator > li.current-menu-item  > a:active,
+#thenavigator > li.current-menu-item  > a:hover{
+	background: rgba(255, 255, 255, 0.15);
+	color: #fff;
+}
+
+#thenavigator > li.sfHover > a:link, #thenavigator > li.sfHover > a:visited, #thenavigator > li.sfHover > a:active, #thenavigator > li.sfHover > a:hover{
+	background: rgba(255, 255, 255, 0.15);
+	color: #fff;
+}
+
+#thenavigator > li.current-menu-ancestor > a:link, #thenavigator > li.current-menu-ancestor > a:hover, #thenavigator > li.current-menu-ancestor > a:visited, 
+#thenavigator > li.current-menu-ancestor > a:active{
+	background: rgba(255, 255, 255, 0.15);
+	color: #fff;
+}
+
+
+
+
+
+@import "responsive-menu";

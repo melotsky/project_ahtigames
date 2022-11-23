@@ -1,0 +1,129 @@
+{
+    "key": "group_5e3379b614a06",
+    "title": "Block - Popup Video",
+    "fields": [
+        {
+            "key": "field_5eb8f238b70ea",
+            "label": "Enable Popup Video?",
+            "name": "enable_popup_video",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5eb8f35cb70eb",
+            "label": "Video URL",
+            "name": "video_url",
+            "type": "text",
+            "instructions": "Youtube or mp4...",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eb8f238b70ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e337befbd3db",
+            "label": "Image",
+            "name": "image_thumb",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eb8f238b70ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": 320,
+            "min_height": 320,
+            "min_size": "",
+            "max_width": 700,
+            "max_height": 700,
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5eb8f3b3b70ec",
+            "label": "Use big button?",
+            "name": "use_big_button",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5eb8f238b70ea",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/popup-video"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1589185095
+}

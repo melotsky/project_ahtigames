@@ -1,0 +1,81 @@
+{
+    "key": "group_5a39e9ec5d3a2",
+    "title": "Contact Form - Home Footer Only Widget",
+    "fields": [
+        {
+            "key": "field_5a39ea546c3f1",
+            "label": "Title",
+            "name": "title_cfh",
+            "type": "text",
+            "instructions": "If you want to use blue text for the title simply follow these intruction:  THIS IS A &lt;span class=\"dblue\"&gt;BLUE TEXT&lt;span&gt;",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a39eb0a6c3f2",
+            "label": "Sub Title",
+            "name": "sub_title_cfh",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5a39eb146c3f3",
+            "label": "Contact Form Shortcode",
+            "name": "contact_form_shortcode_cfh",
+            "type": "text",
+            "instructions": "eg: [contact-form-7 id=\"4\" title=\"Contact form 1\"]",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "contactformhomefooteronly_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1513745214
+}

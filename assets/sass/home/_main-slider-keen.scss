@@ -1,0 +1,475 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/**** SLIDER START *****/
+#home_slider{
+  padding: 5.5rem 0 0 0;
+  height: 354px;
+
+  .slick-dots, .splide__pagination{
+    display: none !important;
+  }
+}
+.home_slider__keen-slide.show{
+  display: block;
+  position: absolute;
+}
+.home_slider__keen-slide.active{
+  z-index: 1;
+}
+.home_slider__keen-slide{
+  display: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  min-width: 100%;
+
+  .rel__holder{
+    position: relative;
+  }
+
+
+  .hp__contentholder{
+    padding: 0;
+    max-width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    height: 100%;
+    display: table;
+    max-width: 1100px;
+
+    .hp__widthit{
+      width: 100%;
+      //padding: 4rem 0 0 0;
+      padding: 0;
+      // position: absolute;
+      // bottom: 2.5rem;
+      // left: 0;            
+      display: table-cell;
+      height: 100%;
+      vertical-align: middle;
+
+      .hp__title{
+        font-family: "Bebas Neue", sans-serif;
+        color: #fff;
+        font-weight: 400;
+        line-height: 100%;
+        padding: 0 0 0px 0;
+        font-size: 1.8rem;
+        // text-shadow: 2px 2px 2px rgba(0,0,0,0.7);
+        letter-spacing: 1px;
+        @include tranny;
+
+        >br{
+          padding: 0;
+        }
+
+        > span{
+          font-size: 1.1rem
+        }
+      }
+
+      .hp__title.hp__title__smaller{
+        font-size: 1.5rem;
+        position: relative;
+        padding-top: 2rem;
+      }
+      .hp__subtitle{
+        font-family: "Bebas Neue",sans-serif;
+        color: #fff;
+        font-weight: 400;
+        line-height: 100%;
+        padding: 0.5rem 0 0 0;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        // text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+        @include tranny;
+
+        br{
+          padding: 0;
+        }
+      }
+      .hp__btn{
+        padding: 1rem 0 0 0;
+        font-size: 1rem;
+        line-height: 120%;
+        font-family: "Proxima Nova Extrabold", sans-serif;
+        font-weight: normal;
+        text-transform: uppercase;
+
+
+        a:link, a:visited, a:active{
+          color: #fff;
+          // background-color: rgb(240, 228, 34);
+          border-radius: 30px !important;
+          //                font-family: "Proxima Nova Bold",sans-serif !important;
+          font-weight: 400 !important;
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          letter-spacing: 1px;
+          line-height: 103%;
+
+          border: double 2px transparent;
+          border-radius: 80px;
+          background-image: linear-gradient(transparent, transparent), radial-gradient(circle at top left, #fd990c,#fd790d);
+          background-origin: border-box;
+          background-clip: content-box, border-box;                  
+
+        }
+        a:hover{
+          text-decoration: none;
+        }
+      }
+
+    }
+  }
+
+}
+.home_slider__keen-slide {
+
+
+  .desktop_only{
+    display: none;
+  }
+
+  .slide__bg.mobile_only {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+    background-position: center;
+  }
+
+  .hp__bgholder{
+    padding: 0;
+    height: 240px;
+    width: 100%;
+    background-size: cover;
+    background-position: top center;
+    z-index: 2;
+    position: relative;
+    @include tranny;
+  }
+}
+/**** SLIDER START *****/
+
+
+html[lang="da-DK"],html[lang="en-GB"]{
+  #home_slider .readmore__this {
+    p::-webkit-scrollbar,
+    p::-webkit-scrollbar{
+      -webkit-scrollbar-width: thin;
+      width: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(34, 141, 223, 0.4);
+    }
+    p::-webkit-scrollbar-thumb,
+    p::-webkit-scrollbar-thumb {
+      background: rgba(34, 141, 223, 0.4);
+      border: 1px solid rgba(34, 141, 223, 0.4);
+      border-radius: 0px;
+    }
+    p::-webkit-scrollbar-track,
+    p::-webkit-scrollbar-track {
+      background: rgba(6, 41, 100, .5);
+    }
+    p::-webkit-scrollbar-thumb,
+    p::-webkit-scrollbar-thumb {
+      background-color: rgba(6, 41, 100, 1);
+      border-radius: 6px;
+      border: 3px solid rgba(6, 41, 100, 1);
+    }
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media only screen and (min-width : 531px ) {  
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder {
+    width: 94%
+  }
+}
+@media only screen and (min-width : 581px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle {
+    font-size: 1.1rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title{
+    font-size: 1.9rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit {
+    width: auto;
+  }
+}
+@media only screen and (min-width : 600px ) {
+  .home_slider__keen-slide .rel__holder .slide__bg.mobile_only {
+    background-position: right 20%;
+  }
+}
+@media only screen and (min-width : 781px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 2rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+  }
+}
+@media only screen and (min-width : 831px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 2.1rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title{
+    // font-size: 2.2rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle{
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width : 931px ) {
+  .home_slider__keen-slide .rel__holder .desktop_only.noanimation.ayat {
+    background-size: cover !important;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle br{
+    display: none;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title.hp__title__smaller {
+    font-size: 1.8rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title > span{
+    font-size: 2.5rem
+  }
+
+  #home_slider .splide__pagination {
+    display: block !important;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    text-align: right;
+    padding: 0 1rem 0 0;
+
+    > li{
+      font-size: 0px;
+      display: inline;
+      margin: 0 3px;
+
+      button{
+        transition: all 0.3s ease-in-out 0s;
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        -o-transition: all 0.3s ease-in-out 0s;
+        background: transparent;
+        width: 15px !important;
+        height: 15px !important;
+        text-indent: -9999px;
+        padding: 0;
+        border: 0;
+        border-radius: 50%;
+        border: 2px solid #a5a5a5;        
+      }
+      button:hover{
+        background: #fff;
+        border: 2px solid #fff;
+      }
+
+      button.is-active{
+        background: #fff;
+        border: 2px solid #fff;
+      }
+    }
+  }  
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:link, 
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:visited, 
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:active{
+    padding: .5rem 2rem;  
+  }
+
+  .home_slider__keen-slide .hp__bgholder{
+    height: 239px;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    // font-size: 2.6rem;
+  }
+  .home_slider__keen-slide .rel__holder .desktop_only {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  .home_slider__keen-slide .rel__holder .slide__bg.mobile_only{
+    display: none;
+  }
+
+  #home_slider {
+    padding: 100px 0 0;
+    height: 365px !important;
+  }
+}
+@media only screen and (min-width : 1025px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title > br{
+    display: block;
+  }
+}
+@media only screen and (min-width : 1100px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder {
+    padding: 0;
+    max-width: 1110px;
+    width: 94% !important;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width : 1261px ) {
+  html[lang="da-DK"] #home_slider{
+    height: 396px !important;
+  }
+  #home_slider {
+    padding: 130px 0 0;
+    height: 396px !important;
+  }
+  .hp__sliderhelpertc {
+    position: relative;
+  }
+}
+@media only screen and (min-width : 1331px ) {
+  .home_slider__keen-slide .rel__holder .desktop_only.ctrl__this {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+  }  
+
+}
+@media only screen and (min-width : 1600px ) {
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width : 1700px ) {
+  html[lang="da-DK"] #home_slider {
+    height: 446px !important;
+  }
+  #home_slider{
+    height: 446px !important;
+  }
+  .home_slider__keen-slide .hp__bgholder {
+    height: 290px;
+  }
+
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit{
+    bottom: 3.5rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    line-height: 90%;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 3.750rem;
+  }
+}
+@media only screen and (min-width : 1761px ) {
+  .home_slider__keen-slide .rel__holder .desktop_only.ctrl__this {
+    background-position: center;
+  }
+}
+@media only screen and (min-width : 1800px ) {
+  html[lang="da-DK"] #home_slider {
+    height: 496px !important;
+  }
+  #home_slider {
+    height: 496px !important;
+  }
+  .home_slider__keen-slide .hp__bgholder {
+    height: 340px;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn{
+    font-size: 1.5rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:link,
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:visited,
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__btn a:active {
+    padding: .5rem 3rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle {
+    font-size: 1.5rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 4.5rem;
+  }
+
+}
+@media only screen and (min-width : 1861px ) {
+  html[lang="da-DK"] #home_slider {
+    height: 546px !important;
+  }
+  #home_slider {
+    height: 546px !important;
+  }
+  .home_slider__keen-slide .hp__bgholder {
+    height: 390px;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit {
+    bottom: 5rem;
+  } 
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 5rem;
+  }
+
+}
+@media only screen and (min-width : 1881px ) {
+  html[lang="da-DK"] #home_slider {
+    height: 624px !important;
+  }  
+  #home_slider {
+    height: 624px !important;
+  }
+  .home_slider__keen-slide .hp__bgholder {
+    height: 468px;
+  }
+
+  .home_slider__keen-slide .rel__holder .desktop_only.ctrl__this{
+    background-size: cover;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__subtitle {
+    padding: 1.5rem 0 1rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title.hp__title__smaller {
+    padding-top: 3rem;
+  }
+  .home_slider__keen-slide .hp__bgholder .hp__contentholder .hp__widthit .hp__title {
+    font-size: 5.6rem;
+  }
+}
+/*--------------------------------------------------------------
+# Fixes
+--------------------------------------------------------------*/
+.home_slider__keen-slide .desktop_text_sld,
+.home_slider__keen-slide .mobile_text_sld {
+  display: none !important;
+}
+@media only screen and (min-width: 931px){
+  .home_slider__keen-slide.active .desktop_text_sld {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 930px){
+  .home_slider__keen-slide.active .mobile_text_sld {
+    display: block !important;
+  }
+}
+
+.home_slider__keen-slide .text_sld_anim1,
+.home_slider__keen-slide .text_sld_anim2{
+  opacity: 0;
+}

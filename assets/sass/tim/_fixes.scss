@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# GENERAL
+--------------------------------------------------------------*/
+/*header son-beam*/
+son-beam {
+  display: block;
+  min-height: 34px;
+}
+/*--------------------------------------------------------------
+# END GENERAL
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# HP games carousels
+--------------------------------------------------------------*/
+@media screen  and (max-width: 479px){
+  body.home .cumuli-son-api-games-carusel .splide__slide{
+    width: 120px;
+    height: 120px;
+  }  
+}
+@media screen and (min-width: 480px) and (mix-width: 930px){
+  body.home .cumuli-son-api-games-carusel .splide__slide{
+    width: 31vw;
+    height: 31vw;
+  }
+  
+}
+@media screen and (min-width: 931px) and (mix-width: 1160px){
+  body.home .cumuli-son-api-games-carusel .splide__slide{
+    width: 20vw;
+    height: 20vw;
+  }
+  
+}
+@media screen and (min-width: 1161px){
+  body.home .cumuli-son-api-games-carusel .splide__slide{
+    width: 203px;
+    height: 203px;
+  }
+  
+}

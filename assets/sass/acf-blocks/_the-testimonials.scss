@@ -1,0 +1,185 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/*********** TESTIMONIALS CAROU *********/
+#testimonial_carou{
+  padding: 0;
+  background: #fff;
+}
+#testimonial_wrapper {
+  padding: 3rem 0;
+  max-width: 360px;
+  margin: 0 auto;
+  width: 100%;
+  > h2{
+    padding: 0 0 1rem;
+    color: #082b91;
+    text-align: center;
+  }
+}
+#testimonial_main{
+  padding: 0;
+
+  .slick-track{
+    display: flex;
+  }
+
+  .testi_inner{
+    padding: 1.5rem;
+    height: inherit !important;
+    align-self: stretch;
+
+    .testi_inner__wrapper{
+      padding: 1rem;
+      background: #fff;
+      box-shadow: 0px 0px 17px rgba(7,43,143,0.2);
+      height: 100% !important;
+
+      .testi_content{
+        padding: 0 1rem 1rem;
+        color: #595959;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 120%;
+        position: relative;
+      }
+      .testi_content::before{
+        content: url(images/quote.png);
+        display: block;
+        margin: 0.5rem auto 0.5rem;
+      }
+      .testi_img{
+        padding: 0;
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto 0.5rem;
+      }
+      .testi_name{
+        padding: 0;
+        text-align: center;
+        color: #585858;
+        font-size: 1.2rem;
+        font-family: "Proxima Nova Extrabold", sans-serif;
+        font-weight: normal;
+
+        > span:nth-child(2){
+          font-family: "Proxima Nova", sans-serif;
+          font-weight: normal;
+        }
+      }
+
+    }
+
+  }
+}
+/*********** TESTIMONIALS CAROU *********/
+#testimonial_main-list{
+  display: inline-flex;
+}
+
+#content .ahti_padding_normal.ka_helper__bot + #testimonial_carou > #testimonial_wrapper{
+  padding: 2rem 0 0;
+}
+
+#content .ahti_padding_normal.ka_helper__bot + #testimonial_carou > #testimonial_wrapper #testimonial_main .slick-track{
+  height: 450px;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media only screen and (min-width : 431px ) {
+	#testimonial_wrapper{
+		max-width: 100%;
+	}
+  // #masterFooter{
+	// 	max-width: 100%;
+	// }
+	#content .ahti_padding_normal.ka_helper__bot + #testimonial_carou > #testimonial_wrapper #testimonial_main .slick-track {
+		height: 410px;
+	}
+}
+@media only screen and (min-width : 461px ) {
+	#testimonial_wrapper > h2 {
+		padding: 0 1rem 1rem;
+		color: #082b91;
+		text-align: center;
+		font-size: 2.2rem;
+	}
+}
+@media only screen and (min-width : 480px ) {
+	#content .ahti_padding_normal.ka_helper__bot + #testimonial_carou > #testimonial_wrapper #testimonial_main .slick-track {
+		height: auto;
+	}
+
+}
+@media only screen and (min-width : 481px ) {
+	#testimonial_main .testi_inner .testi_inner__wrapper{
+		padding: 1.5rem 1rem;
+	}
+	#content .ahti_padding_normal.ka_helper__bot + #testimonial_carou > #testimonial_wrapper {
+		padding: 2rem 0 2rem;
+	}
+	#testimonial_main .testi_inner {
+		padding: 1rem;
+	}
+}
+@media only screen and (min-width : 731px ) {
+	#testimonial_main > .slick-list {
+		padding: 0px 160px !important;
+	}
+}
+@media only screen and (min-width : 761px ) {
+  #testimonial_wrapper {
+    padding: 4rem 0;
+  }
+}
+@media only screen and (min-width : 831px ) {
+	#testimonial_wrapper > h2 {
+		font-size: 2.5rem;
+	}
+}
+@media only screen and (min-width : 931px ) {
+  #testimonial_wrapper {
+    padding: 4rem 0;
+  }
+	#testimonial_main > .slick-list {
+		padding: 0px 12rem !important;
+	}
+}
+@media only screen and (min-width : 961px ) {
+	#testimonial_main > .slick-list {
+		padding: 0px 15rem !important;
+	}
+}
+@media only screen and (min-width : 981px ) {
+	#testimonial_wrapper > h2 {
+		font-size: 3rem;
+	}
+}
+@media only screen and (min-width : 1000px ) {
+  #testimonial_wrapper{
+		padding: 4rem 0 4rem; 
+	}
+	#testimonial_main > .slick-list {
+		padding: 0 !important;
+	}
+	// #testimonial_main .testi_inner .testi_inner__wrapper {
+	// 	height: 390px;
+	// }
+	#testimonial_wrapper {
+		width: 94%;
+	}
+}
+@media only screen and (min-width : 1100px ) {
+	#testimonial_wrapper {
+		width: 94%;
+		margin: 0 auto;
+	}
+  #testimonial_wrapper {
+		max-width: 1110px;
+	}
+}
+/*--------------------------------------------------------------
+# Fixes
+--------------------------------------------------------------*/

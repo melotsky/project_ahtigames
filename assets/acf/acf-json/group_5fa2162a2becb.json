@@ -1,0 +1,112 @@
+{
+    "key": "group_5fa2162a2becb",
+    "title": "Single Provider Template Options",
+    "fields": [
+        {
+            "key": "field_5fa2162a348eb",
+            "label": "Desktop Image",
+            "name": "desktop_image_pelit",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "f_img_pelit_desktop",
+            "library": "all",
+            "min_width": 1920,
+            "min_height": 500,
+            "min_size": "",
+            "max_width": 1920,
+            "max_height": 500,
+            "max_size": "",
+            "mime_types": "",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5fa2162a34928",
+            "label": "Mobile Image",
+            "name": "mobile_image_pelit",
+            "type": "image",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "f_img_pelit_mobile",
+            "library": "all",
+            "min_width": 750,
+            "min_height": 415,
+            "min_size": "",
+            "max_width": 750,
+            "max_height": 415,
+            "max_size": "",
+            "mime_types": "",
+            "translations": "copy_once"
+        },
+        {
+            "key": "field_5fa2162a34962",
+            "label": "Title",
+            "name": "title_pelit",
+            "type": "textarea",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": "br"
+        },
+        {
+            "key": "field_5fa2162a3499c",
+            "label": "Button Label",
+            "name": "button_label_pelit",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-singleprovider.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1605067575
+}

@@ -1,0 +1,102 @@
+{
+    "key": "group_5e96e83ddb591",
+    "title": "Block - Game Header",
+    "fields": [
+        {
+            "key": "field_5e96f00dd01da",
+            "label": "Enable the game header?",
+            "name": "enable_the_game_header",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5e96e84dd181d",
+            "label": "Title",
+            "name": "title_game",
+            "type": "text",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e96f00dd01da",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5e96ea77d181e",
+            "label": "Background Image",
+            "name": "background_image",
+            "type": "image",
+            "instructions": "Background Image for Desktop and Mobile",
+            "required": 1,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5e96f00dd01da",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "id",
+            "preview_size": "big-cptThumb",
+            "library": "all",
+            "min_width": 1110,
+            "min_height": "",
+            "min_size": "",
+            "max_width": 701,
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/game-header"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1586950257
+}

@@ -1,0 +1,228 @@
+{
+    "key": "group_60080e1b3508b",
+    "title": "Beam Options",
+    "fields": [
+        {
+            "key": "field_60080e3694e9b",
+            "label": "Responsible Link (fi)",
+            "name": "responsible_link_fi",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080e7d94e9c",
+            "label": "Policy Link (fi)",
+            "name": "policy_link_fi",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080e9f7a9e3",
+            "label": "Responsible Link (no)",
+            "name": "responsible_link_no",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080ea27a9e4",
+            "label": "Policy Link (no)",
+            "name": "policy_link_no",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080ecc7a9e5",
+            "label": "Responsible Link (dk)",
+            "name": "responsible_link_dk",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080ee07a9e6",
+            "label": "Policy Link (dk)",
+            "name": "policy_link_dk",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080ef87a9e7",
+            "label": "Responsible Link (de)",
+            "name": "responsible_link_de",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080efc7a9e8",
+            "label": "Policy Link (de)",
+            "name": "policy_link_de",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080f237a9e9",
+            "label": "Responsible Link (sv)",
+            "name": "responsible_link_sv",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080f367a9ea",
+            "label": "Policy Link (sv)",
+            "name": "policy_link_sv",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080f747a9eb",
+            "label": "Responsible Link (en)",
+            "name": "responsible_link_en",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        },
+        {
+            "key": "field_60080f787a9ec",
+            "label": "Policy Link (en)",
+            "name": "policy_link_en",
+            "type": "url",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "translations": "ignore"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-beam-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "modified": 1611141008
+}

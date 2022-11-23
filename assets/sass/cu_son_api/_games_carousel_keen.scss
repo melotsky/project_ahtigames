@@ -1,0 +1,448 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+/************************************************/
+/* HOME CAROUSEL START */
+/************************************************/
+
+#content .hphc__holder{
+  padding: 0;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);  
+}
+#content .hp_hc__wrapper{
+  padding: 3rem 0 0 0;
+}
+#content .hp_hc__wrapper:first-child{
+  padding: 0;
+}
+#content .hphc__title{
+  padding: 0 0 1rem;
+  h2, h1{
+    padding: 0;
+    float: left;
+    font-size: 1.3rem;
+  }
+
+  .hphc__right{
+    padding: 0;
+    float: right;
+    position: relative;
+    top: -4px;
+
+    > a:link, > a:visited, > a:active{
+      opacity: .5;
+      float: left;
+      text-transform: uppercase;
+      color: #8bb2eb;
+      border-radius: 30px;
+      border: 2px solid #8bb2eb;
+      line-height: 100%;
+      padding: 0.5rem 0.7rem;
+      height: 31px;
+      text-decoration: none;
+      font-size: 0.7rem;
+      font-family: "Proxima Nova Semibold",sans-serif;
+    }
+    > a:hover{
+      opacity:1;
+    }
+
+    .hphc__prevnext{
+      padding: 0;
+      float: left;
+      margin: 0 0 0 1rem;
+      width: 77px;
+      display: none;
+
+      .prev:hover, .next:hover{
+        opacity: 1;
+      }
+      .prev, .next{
+        position: relative;
+        @include tranny;
+        opacity: 0.5;
+        padding: 0;
+        height: 33px;
+        display: block;
+        width: 33px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,0.15);
+        position: relative;
+      }
+      .prev{
+        float: left;
+      }
+
+      .next{
+        float: right;
+      }
+      .prev::before, .next::before{
+        background-image:url(images/arrow-caro2.png);
+        content:"";
+        height: 21px;
+        width: 24px;
+        position: absolute;        
+      }
+      .prev::before{
+
+        left: 3px;
+        top: 6px;
+        background-position: 96px 0;
+      }
+      .next::before{
+        right: 6px;
+        top: 6px;
+        background-position: 32px 0;
+      }
+    }
+
+  }
+
+
+}
+#content .hphc__title .hphc__right.near_title{
+  display: inline-block;
+  float: unset;
+  padding: 0 0 0 1rem;
+  line-height: 1;
+  position: relative;
+  top: -1px;
+
+  a:link, a:visited, a:active{
+    background-color: rgba(255,255,255,0.15);
+    border: 0;
+    line-height: 100%;
+    display: block;
+    float: unset;
+    line-height: 22px;
+    border-radius: 6px;
+    padding: 0rem 0.7rem;
+    height: 22px;
+    color: rgba(255, 255, 255, 1) !important;
+  }
+  
+  a:hover {
+    color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(255,255,255,0.20);
+  }
+}
+
+#content .hphc__title .hphc__right.near_title + .hphc__right{
+  display: none;
+}
+
+.page-template-template-home  #content .hp__tabs{
+	padding: 0;
+	.hp_hc__wrapper{
+		padding: 0;
+		.hphc__holder.keen-slider{
+
+			padding: 0;
+
+			.cumuli-son-api-widget.cumuli-son-api-games-carusel{
+				padding: 2.5rem 0 0 0;
+			}
+			.cumuli-son-api-widget.cumuli-son-api-games-carusel:first-child{
+				padding: 0;
+			}
+		}
+
+	}
+	
+}
+.page-template-template-home  #content .hp__tabs{
+	.hp_carouselx{
+		.wp-block-group__inner-container{
+			.cumuli-son-api-widget.cumuli-son-api-games-carusel:first-child{
+				padding: 0
+			}
+			.cumuli-son-api-widget.cumuli-son-api-games-carusel{
+				padding: 2.5rem 0 0 0;
+			}
+		}
+	}
+}
+
+/************************************************/
+/* HOME CAROUSEL END */
+/************************************************/
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+@media only screen and (min-width : 431px ) {
+ 	#content .hphc__title .hphc__right.near_title {
+		top: 0px;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0 8rem;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		float: left;
+		padding: 0;
+		font-size: 1.5rem;
+	}
+	#content .hphc__title .hphc__right {
+		float: right;
+		padding: 0;
+		position: relative;
+		top: -6px;
+	}
+	#content .hphc__title {
+		padding: 0 0 1rem;
+	}
+}
+@media only screen and (min-width : 481px ) {
+	#content .hphc__title .hphc__right.near_title {
+		top: 1px;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		font-size: 1.7rem;
+	}
+	#content .hphc__title .hphc__right {
+		top: -2px;
+	}
+  #content .hphc__holder .slick-list {
+		padding: 0 4rem;
+	}
+	#content .hphc__holder .tgt__items_holder .tgt__hover .hphc__demo {
+		font-size: .6rem;
+	}
+	#content .hphc__holder .tgt__items {
+		padding: 0 0.5rem;
+	}
+
+}
+@media only screen and (min-width : 561px ) {
+	#content .hphc__title .hphc__right.near_title {
+		top: 2px;
+	}
+	#content .hphc__title .hphc__right > a:link,
+  #content .hphc__title .hphc__right > a:visited,
+  #content .hphc__title .hphc__right > a:active {
+		padding: .5rem 1rem;
+		font-size: .8rem;
+	}
+  #content .hphc__holder .slick-list {
+		padding: 0 5rem;
+	}
+
+}
+@media only screen and (min-width : 600px ) {
+	#content .hphc__title h2{
+		float: left;
+		padding: 0;
+	}
+	#content .hphc__title .hphc__right{
+		float: right;
+		padding: 0;
+	}
+	#content .hphc__title {
+		padding: 0 0 1rem;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0 6rem;
+	}
+}
+@media only screen and (min-width : 631px ) {
+	#content .hphc__title .hphc__right.near_title {
+		top: 3px;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		font-size: 1.9rem;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0 7rem;
+	}
+}
+@media only screen and (min-width : 661px ) {
+	#content .hphc__title .hphc__right .hphc__prevnext .prev::after {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background: transparent;
+	}
+	#content .hphc__title .hphc__right.near_title + .hphc__right {
+		display: block;
+	}
+	#content .hphc__title .hphc__right.near_title {
+		top: 0px;
+	}
+	#content .hphc__title .hphc__right.near_title a:link,
+  #content .hphc__title .hphc__right.near_title a:visited,
+  #content .hphc__title .hphc__right.near_title a:active {
+		line-height: 30px;
+		height: 30px;
+	}
+	#content .hphc__title .hphc__right {
+		top: -3px;
+	}
+	#content .hphc__title .hphc__right > a:link,
+  #content .hphc__title .hphc__right > a:visited,
+  #content .hphc__title .hphc__right > a:active {
+		font-size: 1rem;
+	}
+	#content .hphc__title .hphc__right .hphc__prevnext{
+		display: unset;
+	}
+}
+@media only screen and (min-width : 700px ) {
+	.page-template-template-home #content .hp__tabs .hp_carouselx .wp-block-group__inner-container .cumuli-son-api-widget.cumuli-son-api-games-carusel,
+	#carousel__helper.carousel__helper__class > div:nth-child(1) {
+		padding: 3rem 0 0;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0 9rem;
+	}
+}
+@media only screen and (min-width : 761px ) {
+	#content .hphc__holder .slick-list {
+		padding: 0 5rem;
+	}
+}
+@media only screen and (min-width : 800px ) {
+	#content .hphc__title h2, #content .hphc__title h1 {
+		font-size: 2.1rem;
+	}
+	#content .hphc__title .hphc__right .hphc__prevnext{
+		display: block;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		padding: 0;
+		float: left;
+	}
+	#content .hphc__title .hphc__right {
+		padding: 0;
+		float: right;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0 6rem;
+	}
+	#content .hphc__holder .hphc__img a:link .hphc_hover .hphc_hover_table .hphc_hover_tablecell span,
+  #content .hphc__holder .hphc__img a:visited .hphc_hover .hphc_hover_table .hphc_hover_tablecell span,
+  #content .hphc__holder .hphc__img a:active .hphc_hover .hphc_hover_table .hphc_hover_tablecell span {
+		font-size: .7rem;
+	}
+}
+@media only screen and (min-width : 861px ) {
+	#content .hphc__holder .slick-list {
+		padding: 0 7rem;
+	}
+}
+@media only screen and (min-width : 900px ) {
+	#content .hphc__holder .slick-list {
+		padding: 0 8rem;
+	}
+}
+@media only screen and (min-width : 931px ) {
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__title {
+		font-size: 1rem;
+	}
+  
+	#content .hphc__holder #global-search-reslt .tgt__items_holder .tgt__hover .hphc__demo {
+		font-size: .6rem;
+	}
+  #content .hphc__holder .tgt__items_holder .tgt__hover .hphc__demo {
+		font-size: .8rem;
+	}
+	#content .hphc__holder .tgt__items_holder .tgt__hover .hphc__demo a:link,
+  #content .hphc__holder .tgt__items_holder .tgt__hover .hphc__demo a:visited,
+  #content .hphc__holder .tgt__items_holder .tgt__hover .hphc__demo a:active{
+		padding: 0.5rem 0.9rem;
+	}
+	#content .hphc__holder {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#content .hphc__holder .slick-list {
+		padding: 0;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs{
+		opacity: 0;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__title {
+		font-size: 1rem;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__demo {
+		font-size: 0.8rem;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__reg {
+		font-size: 0.8rem;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__reviewlink{
+		font-size: 0.8rem
+	}
+}
+@media only screen and (min-width : 961px ) {
+	#content .hphc__holder .slick-list .hphc__img a:link .hphc_hover .hphc_hover_table .hphc_hover_tablecell span,
+  #content .hphc__holder .slick-list .hphc__img a:visited .hphc_hover .hphc_hover_table .hphc_hover_tablecell span,
+  #content .hphc__holder .slick-list .hphc__img a:active .hphc_hover .hphc_hover_table .hphc_hover_tablecell span {
+		font-size: .8rem;
+	}
+}
+@media only screen and (min-width : 1000px ) {
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__title {
+		font-size: 1rem;
+		line-height: 120%;
+		padding: 0 0 0.2rem;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__reg {
+		font-size: 0.7rem;
+	}
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__demo {
+		font-size: .7rem;
+	}
+	#content .hphc__title .hphc__right.near_title + .hphc__right {
+		display: block;
+		top: 6px;
+	}
+	#content .hphc__title .hphc__right.near_title {
+		top: 7px;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		font-size: 2.5rem;
+	}
+	
+	#content .hphc__title .hphc__right > a:link,
+  #content .hphc__title .hphc__right > a:visited,
+  #content .hphc__title .hphc__right > a:active {
+		height: 43px;
+		font-size: 1.125em;
+		padding: 0 2rem;
+		line-height: 43px;
+	}
+}
+@media only screen and (min-width : 1131px ) {
+	#content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__demo,
+  #content .hphc__holder .hphc__img .hphc__btnsarea .hphc_abs .hphc__btns .hphc__reg{
+		font-size: .8rem;
+	}
+}
+@media only screen and (min-width : 1461px ) {
+	#content .hphc__title .hphc__right.near_title {
+		top: 13px;
+	}
+	#content .hphc__title .hphc__right.near_title + .hphc__right {
+		top: 12px;
+	}
+	#content .hphc__title h2, #content .hphc__title h1 {
+		font-size: 3rem;
+	}
+}
+/*--------------------------------------------------------------
+# Fixes
+--------------------------------------------------------------*/
+html[lang="en-GB"] #content .hphc__title .hphc__right > a,
+html[lang="da-DK"] #content .hphc__title .hphc__right > a,
+html[lang="sv-SE"] #content .hphc__title .hphc__right > a,
+html[lang="no"] #content .hphc__title .hphc__right > a,
+html[lang="de-DE"] #content .hphc__title .hphc__right > a
+{
+  display: none !important;   
+
+}

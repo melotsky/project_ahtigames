@@ -1,0 +1,44 @@
+{
+    "key": "group_5f97c15fb20b0",
+    "title": "Widget - Legal Notice 1",
+    "fields": [
+        {
+            "key": "field_5f97c17122bc1",
+            "label": "Link",
+            "name": "link_ln1",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 1,
+            "translations": "ignore"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "widget",
+                "operator": "==",
+                "value": "legalnoticeposition1_widget"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1606350772
+}
