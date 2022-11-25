@@ -4,9 +4,8 @@
  */
 
 get_header(); 
-use cumuli\son_api\Helper;?>
 
-<?php
+use cumuli\son_api\Helper;
 $detect = new Mobile_Detect;
 $sticky = get_option( 'sticky_posts' );
 rsort( $sticky );
@@ -15,22 +14,18 @@ $sticky[0];
 ?>
 
 <section id="sec-blogsummary" class="group">
-	<div id="outer">
-		<div id="inner" class="wrapper_single">
-
-			<div id="primary" class="group site-content bottom-spacer">
-				<div id="content" role="main" class="group">
+    <div id="outer">
+        <div id="inner" class="wrapper_single">
+            <div id="primary" class="group site-content bottom-spacer">
+                <div id="content" role="main" class="group">
                     <?php while ( have_posts() ) : the_post(); ?>
                         <?php get_template_part( 'template-parts/content', 'post' ); ?>
                         <?php //comments_template( '', true ); ?>
                     <?php endwhile; // end of the loop. ?>
-				</div><!-- #content --> 
-			</div><!-- #primary -->
-
+                </div><!-- #content --> 
+            </div><!-- #primary -->
         </div><!-- #inner -->
-        
-
-
+            
         <?php
         /**
          * Related Articles / More Articles
@@ -44,8 +39,6 @@ $sticky[0];
             
             $ignore_this_posts = array($current_post);
             //array_push($a, get_option( 'sticky_posts' ) );
-            
-
             $related_posts = new WP_Query( array( 
                 'post_type'         => 'post', 
                 'posts_per_page'    => 3, 
@@ -102,18 +95,11 @@ $sticky[0];
                 <?php endwhile; ?>
                 </div>
               </div>
-            <?php endif; ?>
-            <?php wp_reset_postdata(); // reset the query ?>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); // reset the query ?>
 
         </div>
-        <?php 
-        /**
-         * END OF RELATED ARTICLES
-         */
-        ?>
-
-
-	</div><!-- #outer -->
+    </div><!-- #outer -->
 </section>
 <?php //get_sidebar(); ?>
 <?php get_footer(); ?>

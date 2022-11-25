@@ -61,8 +61,6 @@ if( !empty($block['align']) ) {
             </div>
             <?php $counter++; endwhile ?>
 
-
-
         </div>
     </div>
 

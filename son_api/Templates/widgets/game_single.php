@@ -47,48 +47,48 @@ $slots_features = $game->slots_features;
     <div class="site-main" id="demo_iframe">
         <div class="group di__wrapper">
 
-                <div class="di__img">
-                    <img width="720" height="400" id="single_screenshot_game" src="<?php $game->screenshot; ?>" alt="<?=$game->application_name?>" title="<?=$game->application_name?>" class="" />
-                    <?php if($funMode): ?>
-                        <div id="demo_holder"></div>
-                        <div class="new_btns group">
-                            <div class="new_btnstable">
-                                <div class="new_btnstablecell">
-                                    <div class="sgi__btns group">
-                                        <p class="has-text-align-center">
-                                            <a href="#" onclick="CU_SON_API.auth_open_registration(); return false;" class="sgi_btn_yellow">pelaa nyt</a>
-                                            <a href="#" class="sgi_btn_yellow_to_transparent demo_mobile_class1">ilmaispeli</a>
-                                        </p>
-                                    </div>
+            <div class="di__img">
+                <img width="720" height="400" id="single_screenshot_game" src="<?php $game->screenshot; ?>" alt="<?=$game->application_name?>" title="<?=$game->application_name?>" class="" />
+                <?php if($funMode): ?>
+                    <div id="demo_holder"></div>
+                    <div class="new_btns group">
+                        <div class="new_btnstable">
+                            <div class="new_btnstablecell">
+                                <div class="sgi__btns group">
+                                    <p class="has-text-align-center">
+                                        <a href="#" onclick="CU_SON_API.auth_open_registration(); return false;" class="sgi_btn_yellow">pelaa nyt</a>
+                                        <a href="#" class="sgi_btn_yellow_to_transparent demo_mobile_class1">ilmaispeli</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <script type="text/javascript">
-                                jQuery(document).ready(function(jQuery) {
-                                    jQuery('.demo_mobile_class1').click(function () {
-                                        jQuery('#demo_holder').html('<?=$iframe?>');
-                                        jQuery('.demo_mobile_class1').hide();
-                                        jQuery('.demo_mobile_class2').show();
-                                        jQuery('.demo_mobile_class1 .dm_2').toggleClass('active');
-                                        jQuery('.demo_mobile_class2 .dm_2').toggleClass('active');
-                                        jQuery('.new_btns').hide();
-                                        jQuery('#single_game_hidbtn').show();
-                                        return false;
-                                    });
-
-                                    jQuery('.demo_mobile_class2').click(function () {
-                                        jQuery('#demo_holder').html('');
-                                        jQuery('.demo_mobile_class2').hide();
-                                        jQuery('.demo_mobile_class1').show();
-                                        jQuery('.demo_mobile_class1 .dm_2').toggleClass('active');
-                                        jQuery('.demo_mobile_class2 .dm_2').toggleClass('active');
-                                        return false;
-                                    });
-
+                    </div>
+                    <script type="text/javascript">
+                            jQuery(document).ready(function(jQuery) {
+                                jQuery('.demo_mobile_class1').click(function () {
+                                    jQuery('#demo_holder').html('<?=$iframe?>');
+                                    jQuery('.demo_mobile_class1').hide();
+                                    jQuery('.demo_mobile_class2').show();
+                                    jQuery('.demo_mobile_class1 .dm_2').toggleClass('active');
+                                    jQuery('.demo_mobile_class2 .dm_2').toggleClass('active');
+                                    jQuery('.new_btns').hide();
+                                    jQuery('#single_game_hidbtn').show();
+                                    return false;
                                 });
-                            </script>                                             
-                    <?php endif; ?>
-                </div>
+
+                                jQuery('.demo_mobile_class2').click(function () {
+                                    jQuery('#demo_holder').html('');
+                                    jQuery('.demo_mobile_class2').hide();
+                                    jQuery('.demo_mobile_class1').show();
+                                    jQuery('.demo_mobile_class1 .dm_2').toggleClass('active');
+                                    jQuery('.demo_mobile_class2 .dm_2').toggleClass('active');
+                                    return false;
+                                });
+
+                            });
+                        </script>                                             
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </div>
@@ -111,9 +111,6 @@ $slots_features = $game->slots_features;
     }, 2000); //2 seconds
   });
 </script>
-
-
-
 
 <div id="sgi" class="group">
   <div id="sgi__wrapper" class="site-main">
@@ -316,9 +313,6 @@ $slots_features = $game->slots_features;
 
         </div>
     <?php endif; ?>
-
-
-
 
   </div>
 </div>

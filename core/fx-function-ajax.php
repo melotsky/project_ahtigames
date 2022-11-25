@@ -135,23 +135,6 @@ function AJAX_ROULETTE() {
 add_action( 'wp_ajax_THE_ROULETTE', 'AJAX_ROULETTE' );
 add_action( 'wp_ajax_nopriv_THE_ROULETTE', 'AJAX_ROULETTE' );  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //SLOTS
 
 /**
@@ -275,38 +258,6 @@ function slots_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_SLOTS', 'AJAX_HANDLER_SLOTS' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_SLOTS', 'AJAX_HANDLER_SLOTS' );  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //CARDGAMES
 
@@ -432,42 +383,7 @@ function cg_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_CG', 'AJAX_HANDLER_CG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_CG', 'AJAX_HANDLER_CG' ); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //JACKPOT
+ //JACKPOT
 
 /**
  * Register Ajax script

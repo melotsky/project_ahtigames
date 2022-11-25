@@ -12,25 +12,10 @@ function my_header() {
 function headerWrapperStart1(){ ?>
     <div id="mainHeaderHolder" class="group">
 <?php
-    //if( is_front_page() or is_page_template( 'templates/template-tarjouksetsub.php' ) ) {
-        // ob_start();
-        // dynamic_sidebar( 'lnp1' );
-        // $ln1 = ob_get_contents();
-        // $lnmain = $ln1;
-        // ob_end_clean();
-        // echo $lnmain;
-    //}
     require_once( dirname(__FILE__) . '/beam.php'); // WP OTHER FUNCTIONS FRONT END
 }
 
-function the_legal_notice_1(){
-    //ob_start();
-    //dynamic_sidebar( 'lnp1' );
-    //$ln1 = ob_get_contents();
-    //$lnmain = $ln1;
-    //ob_end_clean();
-    //echo $lnmain;
-}
+
 
 function headerWrapperStart(){
     // WRAPPPER FOR HEADER START 
@@ -306,7 +291,6 @@ function searchform_slider(){
     //$tat2 = sprintf( __( 'You can visit the page by clicking <a href="#">here</a>.', 'bsfj_lang' ));
 }
 add_action('my_header', 'headerWrapperStart1', 1);
-add_action('my_header', 'the_legal_notice_1', 2);
 
 add_action('my_header', 'headerWrapperStart', 3);
 add_action('my_header', 'headerInnerWrapperStart', 4);
@@ -325,7 +309,4 @@ add_action('my_header', 'login_header_mobile', 11);
 add_action('my_header', 'headerInnerWrapperEnd', 12);
 add_action('my_header', 'headerWrapperEnd', 20);
 add_action('my_header', 'slider_holder', 21);
-//add_action('my_header', 'btn_search_wrapper_start', 25);
-//add_action('my_header', 'the_btns', 26);
-//add_action('my_header', 'btn_search_wrapper_end', 28);
-//add_action('my_header', 'searchform_slider', 26);
+

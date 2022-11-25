@@ -43,9 +43,6 @@ if( get_field('enable_trustly_tab') == "1" ) : ?>
             <?php if( get_sub_field('enable_slider_tab') == "1" ) : ?>
                 <div id="habs-slider-<?php _e($counter)?>" class="group habs__slider keen-slider">
 
-<!--                <div class="splide__track">
-                <div class="splide__list"> -->
-
                     <?php $xcounter=1; while(the_repeater_field('slider_tab')) : 
                         $image = wp_get_attachment_image_src(get_sub_field('image_ts'), 'trustly-tabs'); ?>
                         <div class="habs__sliderx keen-slider__slide">
@@ -62,9 +59,6 @@ if( get_field('enable_trustly_tab') == "1" ) : ?>
                         $xcounter++; 
                         endwhile; 
                     ?>
-
-<!--                </div>
-                </div>-->
 
                 </div>
             <?php endif; ?>

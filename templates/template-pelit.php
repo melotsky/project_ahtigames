@@ -25,8 +25,6 @@ use cumuli\son_api\Helper;?>
 
             $featured_image = $featured_image[0] . ".webp";
             ?>
-
-        
             <div class="group pelit__fimg" style="background-image: url(<?php _e($featured_image) ?>)">
                 <div class="group site-main pelit__fimg_inner">
                     <div class="pelit__fimg_table">
@@ -41,59 +39,41 @@ use cumuli\son_api\Helper;?>
             </div>
             <!-- PELIT TEMPLATE FEATURED IMAGE END -->
 
-
-
             <?php  
-        if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
-             $currenturl = "https://";   
-        else  
-             $currenturl = "http://";   
-        // Append the host(domain name, ip) to the URL.   
-        $currenturl.= $_SERVER['HTTP_HOST'];   
-        
-        // Append the requested resource location to the URL   
-        $currenturl.= $_SERVER['REQUEST_URI'];    
-          
-        $currenturl;  
-        $dummy = strstr($currenturl, '?', true);
+            if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+                $currenturl = "https://";   
+            else  
+                $currenturl = "http://";   
+            // Append the host(domain name, ip) to the URL.   
+            $currenturl.= $_SERVER['HTTP_HOST'];   
+            
+            // Append the requested resource location to the URL   
+            $currenturl.= $_SERVER['REQUEST_URI'];    
+            
+            $currenturl;  
+            $dummy = strstr($currenturl, '?', true);
 
-        if( $dummy ){
-            $currenturl = $dummy;
-        }
+            if( $dummy ){
+                $currenturl = $dummy;
+            }
 
-        while(the_repeater_field('labels_and_links')) :
-                $linkox[] = get_sub_field('target_page_navpelit');
-        endwhile;
+            while(the_repeater_field('labels_and_links')) :
+                    $linkox[] = get_sub_field('target_page_navpelit');
+            endwhile;
 
-        while(the_repeater_field('labels_and_links')) :
-            $label[] = get_sub_field('label_navpelit');
-        endwhile;
+            while(the_repeater_field('labels_and_links')) :
+                $label[] = get_sub_field('label_navpelit');
+            endwhile;
 
-        $url = array_search($currenturl, $linkox);
-        $the_url = $linkox[$url];
-        $the_label = $label[$url];
-        //strstr($str, 'www/audio');
-        //echo $currenturl;
-        
+            $url = array_search($currenturl, $linkox);
+            $the_url = $linkox[$url];
+            $the_label = $label[$url];
 
-        // echo $currenturl;
-        // if ( $dummy_url ){
-        //     echo $the_url =  $dummy_url . "<br />";
-        //     echo $currenturl = $dummy_url . "<br />";
-        // }
-        
-      ?>  
-      <!-- pre><?php //print_r($linkox) ?></pre -->
-      
-
+            ?>  
 
             <!-- PELIT NAVIGATION START -->
             <?php if( get_field('enable_pelit_navigation') ) :?>
-            <div id="pelit_nav" class="group nooverflow"
-            <?php if( get_field('hide_on_desktop') == 1 ) { ?>
-                style="height: unset"
-            <?php } ?>
-            >
+            <div id="pelit_nav" class="group nooverflow" <?php if( get_field('hide_on_desktop') == 1 ) { ?>style="height: unset"<?php } ?>>
                 <div class="group">
 
                 <!-- MOPILE PELIT START -->
@@ -235,20 +215,6 @@ use cumuli\son_api\Helper;?>
             });
             </script>            
             <!-- PELIT NAVIGATION END -->
-
-
-            <!-- div id="pelit_info" class="group">
-                <div class="group">
-                    <div id="the_group_pelit_desktop_info" class="group">
-                        <span class="s__parent s__1"><span class="s__child1">daily jackpot</span> <span class="s__child2"><span class="s__numbers djackpot_pelit"><span></span></span></span></span>
-                        <span class="s__parent s__2"><span class="s__child1">must drop in</span> <span class="s__child2 c__child2">2:37.20</span></span>
-                        <span class="s__parent s__3"><span class="s__child1">jackpot play</span> <span class="s__child2"><span class="s__numbers jackpot_pelit"><span></span></span></span></span>
-                        <span class="search_result">search among 3.267 games</span>
-                    </div>
-                </div>
-            </div -->
-
-
 
           <?php while ( have_posts() ) : the_post(); ?>
             <?php get_template_part( 'template-parts/content', 'pelit' ); ?>

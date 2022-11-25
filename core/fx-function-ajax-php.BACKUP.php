@@ -136,22 +136,6 @@ add_action( 'wp_ajax_THE_ROULETTE', 'AJAX_ROULETTE' );
 add_action( 'wp_ajax_nopriv_THE_ROULETTE', 'AJAX_ROULETTE' );  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //SLOTS
 
 /**
@@ -276,38 +260,6 @@ function slots_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_SLOTS', 'AJAX_HANDLER_SLOTS' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_SLOTS', 'AJAX_HANDLER_SLOTS' );  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //CARDGAMES
 
 /**
@@ -431,41 +383,6 @@ function cg_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_CG', 'AJAX_HANDLER_CG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_CG', 'AJAX_HANDLER_CG' ); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   //JACKPOT
 
@@ -592,29 +509,6 @@ function AJAX_HANDLER_JG() {
 add_action( 'wp_ajax_THE_PARAMETER_JG', 'AJAX_HANDLER_JG' );
 add_action( 'wp_ajax_nopriv_THE_PARAMETER_JG', 'AJAX_HANDLER_JG' ); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MICROGAMING
 
 /**
@@ -735,35 +629,6 @@ function microgaming_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_MG', 'AJAX_HANDLER_MG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_MG', 'AJAX_HANDLER_MG' ); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //REALASTIC
 
@@ -886,33 +751,7 @@ function realistic_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_RG', 'AJAX_HANDLER_RG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_RG', 'AJAX_HANDLER_RG' ); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//GANAPATI
+  //GANAPATI
 
 /**
  * Register Ajax script
@@ -1032,18 +871,6 @@ function ganapati_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_GG', 'AJAX_HANDLER_GG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_GG', 'AJAX_HANDLER_GG' ); 
-
-
-
-
-
-
-
-
-
-
-
-
 
 //REDTIGER
 
@@ -1167,23 +994,6 @@ function redtiger_theme_name_reg_script() {
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_RT', 'AJAX_HANDLER_RT' ); 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //YGGDRASIL
 
 /**
@@ -1305,23 +1115,6 @@ function yggdrasil_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_YD', 'AJAX_HANDLER_YD' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_YD', 'AJAX_HANDLER_YD' ); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //MERKUR
 /**
  * Register Ajax script
@@ -1442,13 +1235,6 @@ function merkur_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_MKZ', 'AJAX_HANDLER_MKZ' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_MKZ', 'AJAX_HANDLER_MKZ' ); 
 
-
-
-
-
-
-
-  
 //STAKELOGIC
 /**
  * Register Ajax script
@@ -1569,21 +1355,6 @@ function stakelogic_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_SL', 'AJAX_HANDLER_SL' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_SL', 'AJAX_HANDLER_SL' );
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //BLUEPRINT GAMING
 /**
  * Register Ajax script
@@ -1703,14 +1474,6 @@ function blueprintgaming_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_BPG', 'AJAX_HANDLER_BPG' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_BPG', 'AJAX_HANDLER_BPG' );
-
-
-
-
-
-
-
-
 
 //PLAYNGO
 /**
@@ -1833,19 +1596,6 @@ function playngo_theme_name_reg_script() {
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_PNG', 'AJAX_HANDLER_PNG' );
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //NYXGAMING
 /**
  * Register Ajax script
@@ -1966,12 +1716,6 @@ function nyxgaming_theme_name_reg_script() {
   add_action( 'wp_ajax_THE_PARAMETER_NGX', 'AJAX_HANDLER_NGX' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_NGX', 'AJAX_HANDLER_NGX' );
 
-
-
-
-
-
-
 //THUNDERKICK
 /**
  * Register Ajax script
@@ -2091,13 +1835,6 @@ function thunderkick_theme_name_reg_script() {
   }
   add_action( 'wp_ajax_THE_PARAMETER_TKX', 'AJAX_HANDLER_TKX' );
   add_action( 'wp_ajax_nopriv_THE_PARAMETER_TKX', 'AJAX_HANDLER_TKX' );
-
-
-
-
-
-
-
 
 
 

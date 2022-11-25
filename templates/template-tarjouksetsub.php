@@ -16,12 +16,6 @@ get_header(); ?>
             <!-- PELIT TEMPLATE FEATURED IMAGE START -->
             <?php 
             $detect = new Mobile_Detect;
-            // if( $detect->isMobile() ) {
-            //     $image_featured = wp_get_attachment_image_src(get_field('mobile_image_pelit'), 'f_img_pelit_mobile');
-            // }else{
-            //     //$image_featured = wp_get_attachment_image_src(get_field('desktop_image_pelit'), 'f_img_pelit_desktop');
-            //     $image_featured = wp_get_attachment_image_src(get_field('desktop_image_pelit'), 'full');
-            // }
 
             $featured_image = $detect->isMobile()
                 ? wp_get_attachment_image_src(get_field('mobile_image_pelit'), 'f_img_pelit_mobile')

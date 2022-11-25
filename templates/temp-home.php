@@ -10,7 +10,6 @@ get_header(); ?>
         <div id="inner" class="group">
             <div id="main_wrapper" class="group">
 
-
                 <div id="primary" class="site-content">
                     <div id="content" role="main">
 
@@ -21,7 +20,6 @@ get_header(); ?>
 
                     </div><!-- #content --> 
                 </div><!-- #primary -->
-
 
             </div><!-- #main_wrapper -->    
         </div><!-- #inner -->    

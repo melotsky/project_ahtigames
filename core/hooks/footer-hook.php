@@ -170,8 +170,6 @@ function footer_lang_switcher(){
 
     $tobe_converted = $current_locale = get_locale();
     $converted = str_replace( '_', '-', $tobe_converted );
-    //echo $converted . "<br>";
-    //echo $new = in_array( $current_locale, $current_lang_local );
     $current_flag_holder = $flag_holder[ $current_locale ];
     $current_flag_name = $flag_name[ $current_locale ];
 
@@ -304,18 +302,11 @@ function data_layer_push(){
 ?>
 <?php }
 
-//add_action('theFooterHook', 'popup_form', 1);
 add_action('theFooterHook', 'footerWrapperStart', 2);
 add_action('theFooterHook', 'read_more_content', 3);
 add_action('theFooterHook', 'second_widget_footer', 4);
 add_action('theFooterHook', 'third_widget_footer', 5);
 add_action('theFooterHook', 'fourth_widget_footer', 6);
 add_action('theFooterHook', 'copyright_and_logo', 7);
-//add_action('theFooterHook', 'footerLogo', 6);
-//add_action('theFooterHook', 'rightAreaStartWrap', 3);
-//add_action('theFooterHook', 'mainRightFooter', 4);
-//add_action('theFooterHook', 'rightAreaEndWrap', 5);
 add_action('theFooterHook', 'footerWrapperEnd', 100);
-//add_action('theFooterHook', 'login_signup_mobile', 101);
-//add_action ('theFooterHook', 'the_popup_box', 200);
 add_action('theFooterHook', 'data_layer_push', 300);

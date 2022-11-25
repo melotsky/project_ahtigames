@@ -31,7 +31,6 @@ $sticky[0];
 
 				<div id="content" role="main" class="group">
 				
-				
 				<?php 
 				if ( have_posts() ) : ?>
 					<div id="bs__holder">

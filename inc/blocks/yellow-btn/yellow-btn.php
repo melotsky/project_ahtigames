@@ -44,9 +44,7 @@ if ( get_field('enable_yellow_button') == 1 ) :
         $thelink_target = $thelink['target'] ? $thelink['target'] : '_self';?>
 
         <a href="<?php echo esc_url( $thelink_url )?>" target="<?php echo esc_attr( $thelink_target ); ?>"><?php _e($label)?></a>
-    <?php endif;
-
-    ?>
+    <?php endif; ?>
 </div>
 
 <?php endif;?>

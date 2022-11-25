@@ -68,8 +68,6 @@ if( get_field('enable_game_iframe_img') == "1" ) :
 
                                     });                                    
 
-                                         
-
                                 });
                             </script>
                         </div>

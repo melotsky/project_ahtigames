@@ -42,8 +42,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
                 </div>
             </div>
         <?php endif; ?>
-
-
     </div>
 
     <header id="lp001__header" class="group">
@@ -69,7 +67,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
         </div>
     </header> 
     
-
     <?php 
     if( get_field('enable_link_only') == 0 ) :?>
         <?php 

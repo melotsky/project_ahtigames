@@ -38,7 +38,6 @@ use cumuli\son_api\Helper;
     </p>
 </div>
 
-
 <?php wp_footer(); ?>
 
 </body>

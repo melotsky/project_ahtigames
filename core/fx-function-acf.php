@@ -40,19 +40,6 @@ if( function_exists('acf_add_options_page') ) {
 		'parent_slug'	=> 'theme-general-settings',
 	));    
 
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'Footer Settings',
-	// 	'menu_title'	=> 'Footer',
-	// 	'parent_slug'	=> 'theme-general-settings',
-
-	// ));
-
-	// acf_add_options_sub_page(array(
-	// 	'page_title' 	=> 'General Settings',
-	// 	'menu_title'	=> 'General Settings',
-	// 	'parent_slug'	=> 'theme-general-settings',
-
-	// ));
 	
 }
 
@@ -71,11 +58,6 @@ function my_acf_json_load_point( $paths ) {
         return $paths;
 }
 
-// load a google map api key
-// function my_acf_init() {
-// 	acf_update_setting('google_api_key', 'AIzaSyBi2V8Iw1gUnx1trNAXqg-btB9bGtK7mUc');  // Change the GOOGLE MAP API KEY if necessary.
-// }
-//add_action('acf/init', 'my_acf_init');
 
 //ENABLE THIS AFTER DEVELOPMENT WAS DONE
 //add_filter('acf/settings/show_admin', '__return_false');

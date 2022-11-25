@@ -25,8 +25,6 @@ if( !empty($block['align']) ) {
 //$blogID = get_option( 'page_for_posts' );
 
 if ( get_field('enable_promotion_block_1') == 1 ) :
-    //$linker = get_field('button_link_pah');
-    //$linker_target = $linker['target'] ? $linker['target'] : '_self';
     $mobile_img = wp_get_attachment_image_src(get_field('image_pb1'), 'promo_block1_img_mob');
     $desktop_img = wp_get_attachment_image_src(get_field('image_pb1'), 'promo_block1_img_desk');
 ?> 
@@ -52,7 +50,5 @@ if ( get_field('enable_promotion_block_1') == 1 ) :
 
     </div>
 </div>
-
-
 <?php
 endif;

@@ -28,9 +28,7 @@ $sticky[0];
                 <?php
                 
                 ?>
-
 				<div id="content" role="main" class="group">
-				
 				
 				<?php 
 				if ( have_posts() ) : ?>

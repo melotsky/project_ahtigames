@@ -43,15 +43,6 @@ if( get_field('show_blog_posts') == "1" ) : ?>
                         <img src="<?php _e($image[0])?>" alt="<?php the_title()?>" title="<?php the_title()?>"/>
                     </a>
                 </div>
-                <!-- div class="group blog_post__cat">
-                    <?php 
-                    // $categories = get_the_category();
-                    // foreach($categories as $category){
-                    //     $category->name; //category name
-                    //     $cat_link = get_category_link($category->cat_ID);
-                    //     echo '<a href="'.$cat_link.'">'.$category->name.'</a>'; // category link
-                    // } ?>
-                </div -->
                 <div class="group blog_post__contet">
                     <h3><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h3>
                     <p><?php the_field('intro_text', $id)?></p>

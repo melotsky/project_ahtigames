@@ -50,23 +50,10 @@ if( get_field('enable_game_image') == "1" ) :
                 <div class="<?php _e($imd_class2) ?>" style=""> 
 
                 <?= 
-				
                  wp_get_attachment_image_prefix(get_field('desktop_image_gi'),'soft_banner_', $img_size, false,[
                      'alt' => get_field('image_titledeskmob'),
                      'title' => get_field('image_titledeskmob') 
-//                      'sizes' => '
-//                        (max-width: 360px) 360px, 
-//                        (max-width: 500px) 500px, 
-//                        (max-width: 600px) 600px, 
-//                        (max-width: 750px) 750px, 
-//                        (max-width: 800px) 800px, 
-//                        (max-width: 900px) 900px, 
-//                        (max-width: 1000px) 1000px,
-//                        100vw',
                   ]);
-                
-                  //wp_get_attachment_image(get_field('desktop_image_desk'), 'full');
-					 
                 ?>					
             
                 </div>

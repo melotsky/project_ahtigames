@@ -29,7 +29,6 @@ function popup_video() {
     
 }
 
-
 function latest_winners() {
 
     // register a latest_winners.
@@ -61,7 +60,6 @@ function the_testimonials() {
     ));
 
 }
-
 
 function blog_post_hp() {
 
@@ -144,7 +142,6 @@ function payments_tab() {
 
 }
 
-
 function background_image_with_content() {
 
     // register a latest_winners.
@@ -194,22 +191,6 @@ function providers_archive_header() {
 }
 
 
-//function home_caro_slider() {
-//
-//    // register a latest_winners.
-//    acf_register_block_type(array(
-//        'name'              => 'home-caro-slider',
-//        'title'             => __('Home Carousel Slider', 'ahti_lang'),
-//        'description'       => __('Home Carousel Slider', 'ahti_lang'),
-//        'render_template'   => './inc/blocks/home-caro-slider/home-caro-slider.php',
-//        'category'          => 'New blocks',
-//        'icon'              => 'admin-comments',
-//        'keywords'          => array( 'home-caro-slider', 'quote' ),
-//        //'enqueue_style'     => get_template_directory_uri() . '/inc/blocks/latest-winners/latest-winners.css',
-//    ));
-//
-//}
-
 function yellow_btn() {
 
     // register a latest_winners.
@@ -241,7 +222,6 @@ function payments_with_type() {
     ));
 
 }
-
 
 function grid_thumbnails() {
 
@@ -341,7 +321,6 @@ function promotion_block_one() {
 
 }
 
-
 function promotion_block_four() {
 
     // register a latest_winners.
@@ -359,7 +338,6 @@ function promotion_block_four() {
 
 }
 
-
 function arvostelut_question_answer() {
 
     // register a latest_winners.
@@ -376,7 +354,6 @@ function arvostelut_question_answer() {
     ));
 
 }
-
 
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {

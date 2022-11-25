@@ -21,9 +21,6 @@ wp_enqueue_script( 'comment-reply' );
 wp_head();
 ?>
 
-
-
-
 <!-- Google Tag Manager -->
 <script>
     (function (w, d, s, l, i) {

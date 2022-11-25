@@ -138,7 +138,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
     </div>
     <!--HEADER AREA END DESKTOP -->
 
-
     <?php
     $desk_img1 = wp_get_attachment_image_src(get_field('main_background_image_desk'), 'lpt001_desk_main_bg'); //main_background_image_mob
     $desk_img2 = wp_get_attachment_image_src(get_field('main_image_desk_character'), 'full'); //main_background_image_mob
@@ -154,7 +153,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
             </div>
         <?php endif; ?>
 
-        
     </div>
     <!-- the  body END-->
 
@@ -179,8 +177,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
         </div>
     </div>
     <!-- desktop buttons end-->
-
-
 
         <?php 
             $button_text_lp = get_field('button_text_lp');

@@ -130,8 +130,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
         <a href="<?php echo esc_url( home_url( '/' ) ); ?>"> 
             <img src="<?php _e($mobile_logo[0])?>" class="lp001_desktop__logo">
         </a>
-
-
     </header>
     </div>
     <!--HEADER AREA END DESKTOP -->
@@ -151,8 +149,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
                 </div>
             </div>
         <?php endif; ?>
-
-        
     </div>
     <!-- the  body END-->
 
@@ -177,7 +173,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
         </div>
     </div>
     <!-- desktop buttons end-->
-
 
     <?php 
     if( get_field('enable_link_only') == 0 ) :?>

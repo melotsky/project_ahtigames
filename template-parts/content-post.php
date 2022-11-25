@@ -66,23 +66,23 @@ $detect = new Mobile_Detect;
   ?>
     <div class="group single__post_img">
       <img 
-                    alt="<?php the_title() ?>"
-                    title="<?php the_title() ?>"
-                    src="<?php _e($banner_img_1110[0]); ?>"  
-                    srcset="
-                    <?php 
-                    echo $banner_img_360[0] . " 360w, ";
-                    echo $banner_img_500[0] . " 500w, ";
-                    echo $banner_img_600[0] . " 600, ";
-                    echo $banner_img_730[0] . " 730w";
-                    ?>"
-                    sizes="
-                        (max-width: 360px) 360px, 
-                        (max-width: 500px) 500px, 
-                        (max-width: 600px) 600px, 
-                        (max-width: 730px) 730px, 
-                        100vw
-                    "
+        alt="<?php the_title() ?>"
+        title="<?php the_title() ?>"
+        src="<?php _e($banner_img_1110[0]); ?>"  
+        srcset="
+        <?php 
+        echo $banner_img_360[0] . " 360w, ";
+        echo $banner_img_500[0] . " 500w, ";
+        echo $banner_img_600[0] . " 600, ";
+        echo $banner_img_730[0] . " 730w";
+        ?>"
+        sizes="
+            (max-width: 360px) 360px, 
+            (max-width: 500px) 500px, 
+            (max-width: 600px) 600px, 
+            (max-width: 730px) 730px, 
+            100vw
+        "
         />       
     </div>
   <?php
@@ -115,21 +115,21 @@ $detect = new Mobile_Detect;
 
 
 
-						<div id="prenxtlink" class="group prenextLinkeer">
-                        <?php
-                        $prev_post = get_previous_post();
-                        if (!empty( $prev_post )): ?>
-                            <a class="prevPost" href="<?php echo get_the_permalink( $prev_post->ID )  ?>">
-								<span class="default_prev_title"><?php Helper::ln_e('previous'); ?></span>
-                            </a>
-                        <?php endif ?>
+<div id="prenxtlink" class="group prenextLinkeer">
+<?php
+$prev_post = get_previous_post();
+if (!empty( $prev_post )): ?>
+    <a class="prevPost" href="<?php echo get_the_permalink( $prev_post->ID )  ?>">
+        <span class="default_prev_title"><?php Helper::ln_e('previous'); ?></span>
+    </a>
+<?php endif ?>
 
 
-                        <?php
-                        $next_post = get_next_post();
-                            if (!empty( $next_post )): ?>
-                                <a class="nextPost" href="<?php echo get_the_permalink($next_post->ID)  ?>">
-									<span class="default_next_title"><?php Helper::ln_e('next'); ?></span>
-                                </a>
-                            <?php endif ?>
-						</div>
+<?php
+$next_post = get_next_post();
+    if (!empty( $next_post )): ?>
+        <a class="nextPost" href="<?php echo get_the_permalink($next_post->ID)  ?>">
+            <span class="default_next_title"><?php Helper::ln_e('next'); ?></span>
+        </a>
+    <?php endif ?>
+</div>

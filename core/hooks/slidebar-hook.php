@@ -138,20 +138,12 @@ function header_lang_switcher_mobile(){
 
 
 function theResponsiveLogo(){
-    //$login = sprintf( __( 'login', 'ahti_lang' ));
-    //$image = wp_get_attachment_image_src(get_field('logo', 'option'), 'full');
     $logoholder = '<div id="slidebar__header" class="group"><div id="close_slidebar"></div>'; 
-    //$logoholder .= '<a href="'.esc_url( home_url( '/' ) ).'" class="mblogo">';
-    //$logoholder .= '<img id="mobile_logo" src="'. $image[0] .'" alt="'. get_bloginfo('name') .'" title="' . get_bloginfo('name') . '" />';
-    //$logoholder .= '</a>';
     header_lang_switcher_mobile();
     $logoholder .= '</div>';
     echo $logoholder;
 }
 
-function responsiveMenu(){
-    //echo '<div id="responsive-menu" class="group"></div>';
-}
 function pelitnav_mobile(){
     ob_start();
     dynamic_sidebar( 'slb' );
@@ -219,25 +211,8 @@ function information_slidebar(){
     echo $sbr2;
 }
 
-
-
-
-
-
 add_action('my_slidebar', 'sliderbarWrapperStart', 1);
-
-
 add_action('my_slidebar', 'header_lang_switcher_mobile', 1 );
-//add_action('my_slidebar', 'theResponsiveLogo', 1 );
-
-
 add_action('my_slidebar', 'pelitnav_mobile', 4);
 add_action('my_slidebar', 'information_slidebar', 5);
-//add_action('my_slidebar', 'login_signup_mobile', 10);
-//add_action('my_slidebar', 'responsiveMenu', 3);
-//add_action('my_slidebar', 'contact_information_slide_bar', 4);
-//add_action('my_slidebar', 'lang_switcher', 5);
-//add_action('my_slidebar', 'respCopyRight', 6);
-
-
 add_action('my_slidebar', 'sliderbarWrapperEnd', 100);

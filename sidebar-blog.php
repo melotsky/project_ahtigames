@@ -7,11 +7,7 @@
  * @package Kick_Ass_Theme
  */
 
-//if ( ! is_active_sidebar( 'main-sidebar' ) ) {
-	//return;
-//}
 $desktop_banner = wp_get_attachment_image_src(get_field('desktop_banner', 'option'), 'advertise__desktop'); 
-
 ?>
 
 <aside id="blog__sb" class="group" role="complementary">

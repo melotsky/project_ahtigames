@@ -151,8 +151,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
                 </div>
             </div>
         <?php endif; ?>
-
-        
     </div>
     <!-- the  body END-->
 
@@ -177,7 +175,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
         </div>
     </div>
     <!-- desktop buttons end-->
-
 
     <?php 
     if( get_field('enable_link_only') == 0 ) :?>
@@ -223,7 +220,6 @@ $mobile_logo = wp_get_attachment_image_src(get_field('mobile_logo_mob'), 'full')
                 </div>
             </div>    
     <?php endif; ?>    
-
 
 </div>
 <?php 
